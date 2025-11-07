@@ -1,0 +1,14 @@
+# VSCode
+.vscode/
+
+# Zed
+.zed/
+
+# ROS2
+build/
+log/
+install/
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml
