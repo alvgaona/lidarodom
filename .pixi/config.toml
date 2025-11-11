@@ -1,2 +1,0 @@
-run-post-link-scripts = "insecure"
-default-channels = ["conda-forge", "robostack-humble"]
