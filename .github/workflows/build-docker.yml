@@ -48,6 +48,7 @@ jobs:
           push: false
           tags: rslidar_sdk:latest
           outputs: type=oci,dest=/tmp/rslidar-image
+          progress: plain
 
       - name: Display build info
         run: |
