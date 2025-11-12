@@ -10,16 +10,23 @@ To run Robosense node you can either use Pixi to run it or build a Docker image.
 
 To run Robosense ROS2 nodes using Pixi, do these few steps:
 
-1. [Prerequisite] Install pixi in your system.
-2. Install pixi dependencies.
+1. (Prerequisite) Install pixi in your system.
+```sh
+curl -fsSL https://pixi.sh/install.sh | sh
+```
+2. Sync submodules.
+```sh
+git submodule update --init --recursive
+```
+3. Install pixi dependencies.
 ```sh
 pixi install
 ```
-3. Build the ROS2 packages.
+4. Build the ROS2 packages.
 ```sh
-pixi run build-pkg rslidar_sdk`
+pixi run build-pkg rslidar_sdk
 ```
-4. Launch the node
+5. Launch the node
 ```sh
 pixi run ros2 launch rslidar_sdk start.py
 ```
@@ -28,15 +35,23 @@ pixi run ros2 launch rslidar_sdk start.py
 
 To run Robosense ROS2 nodes from within a container, do these few steps:
 
-1. Build the Docker image.
+1. Sync submodules.
+```sh
+git submodule update --init --recursive
+```
+2. Build the Docker image.
 ```sh
 docker build -t rslidar_sdk docker/rslidar
 ```
-2. Run the Docker container.
+3. Run the Docker container.
 ```sh
 docker run -it --rm rslidar_sdk
 ```
-3. Launch the node
+4. Launch the node
 ```sh
 ros2 launch rslidar_sdk start.py
 ```
+
+## Livox
+
+TBD
