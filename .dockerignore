@@ -1,0 +1,29 @@
+# Livox SDK and ROS driver (not used in rslidar builds)
+src/Livox-SDK2/
+src/livox_ros_driver2/
+
+# Build artifacts
+build/
+install/
+log/
+
+# Development files
+.pixi/
+.vscode/
+.DS_Store
+.zed/
+
+# Git files
+.git/
+.gitignore
+.gitmodules
+
+# Data directories
+data/
+
+# Documentation (optional, remove if you want docs in image)
+*.md
+README*
+
+# CI/CD
+.github/
