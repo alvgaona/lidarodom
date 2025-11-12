@@ -10,6 +10,8 @@ clean = "rm -rf build/ install/ log/"
 build-pkg = "sh -c 'colcon build --packages-up-to \"$0\" --symlink-install --event-handlers console_direct+ --cmake-args -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_FLAGS=\"-Wall\" -DPython3_EXECUTABLE=$(which python) -DPython_EXECUTABLE=$(which python)'"
 test-pkg = "sh -c 'colcon test --packages-up-to \"$0\" --event-handlers console_direct+'"
 build-livox-sdk = "cmake -B src/Livox-SDK2/build -S src/Livox-SDK2 && cmake --build src/Livox-SDK2/build && cmake --install src/Livox-SDK2/build"
+record = "bash -c 'source install/setup.bash && export DYLD_FALLBACK_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$DYLD_FALLBACK_LIBRARY_PATH && ros2 bag record -a'"
+
 
 [dependencies]
 colcon-common-extensions = ">=0.3.0,<0.4"
@@ -20,6 +22,7 @@ libboost-devel = ">=1.86.0,<2"
 pcl = ">=1.15.0,<2"
 libpcap = ">=1.10.4,<2"
 yaml-cpp = ">=0.8.0,<0.9"
+ros-humble-rosbag2-storage-mcap = ">=0.15.14,<0.16"
 
 [feature.humble.dependencies]
 ros-humble-desktop-full = "*"

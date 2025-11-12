@@ -4,12 +4,12 @@
 [submodule "src/rslidar_msg"]
 	path = src/rslidar_msg
 	url = https://github.com/RoboSense-LiDAR/rslidar_msg.git
-[submodule "src/livox_ros_driver2"]
-	path = src/livox_ros_driver2
-	url = https://github.com/Livox-SDK/livox_ros_driver2.git
-[submodule "src/Livox-SDK2"]
-	path = src/Livox-SDK2
-	url = https://github.com/Livox-SDK/Livox-SDK2.git
 [submodule "src/rslidar_sdk"]
 	path = src/rslidar_sdk
 	url = https://github.com/alvgaona/rslidar_sdk.git
+[submodule "src/livox_ros_driver2"]
+	path = src/livox_ros_driver2
+	url = https://github.com/alvgaona/livox_ros_driver2.git
+[submodule "src/Livox-SDK2"]
+	path = src/Livox-SDK2
+	url = https://github.com/alvgaona/Livox-SDK2.git
