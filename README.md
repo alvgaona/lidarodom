@@ -30,7 +30,7 @@ To run Robosense ROS2 nodes from within a container, do these few steps:
 
 1. Build the Docker image.
 ```sh
-docker build -t rslidar_sdk .
+docker build -t rslidar_sdk docker/rslidar
 ```
 2. Run the Docker container.
 ```sh
