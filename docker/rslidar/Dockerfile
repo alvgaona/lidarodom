@@ -1,4 +1,5 @@
-FROM alvgaona/ros:humble-desktop
+ARG BASE_IMAGE=osrf/ros:humble-desktop
+FROM ${BASE_IMAGE}
 
 USER root
 WORKDIR /root/rslidar_ws
